@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0\">
+    <title>Audi A6 - Vorsprung durch Technik</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <!-- Background Image -->
+        <div class="hero-background"></div>
+
+        <!-- Headlight Beams -->
+        <div class="headlights">
+            <!-- Left Headlight Beam -->
+            <div class="headlight-beam left-beam"></div>
+            
+            <!-- Right Headlight Beam -->
+            <div class="headlight-beam right-beam"></div>
+
+            <!-- Headlight Glow Points -->
+            <div class="headlight-glow left-glow"></div>
+            <div class="headlight-glow right-glow"></div>
+        </div>
+
+        <!-- Animated Grid Overlay -->
+        <div class="grid-overlay"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-content" id="heroContent">
+            <!-- Audi Logo -->
+            <div class="audi-logo">
+                <svg viewBox="0 0 120 120" fill="none">
+                    <circle cx="25" cy="60" r="18" stroke="white" stroke-width="3" fill="none" />
+                    <circle cx="50" cy="60" r="18" stroke="white" stroke-width="3" fill="none" />
+                    <circle cx="75" cy="60" r="18" stroke="white" stroke-width="3" fill="none" />
+                    <circle cx="100" cy="60" r="18" stroke="white" stroke-width="3" fill="none" />
+                </svg>
+            </div>
+
+            <h1 class="hero-title">Quattro</h1>
+            
+            <p class="hero-tagline">An Automobile Chatbot</p>
+
+            <button class="cta-button">CHAT NOW</button>
+
+            <div class="scroll-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" id="scrollIndicator">
+            <div class="scroll-indicator-bar">
+                <div class="scroll-indicator-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Specs Section -->
+    <section class="specs-section">
+        <h2 class="specs-title">Performance Redefined</h2>
+
+        <div class="specs-grid">
+            <div class="spec-card" data-index="0">
+                <div class="spec-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                </div>
+                <h3 class="spec-value">261 HP</h3>
+                <p class="spec-description">2.0L Turbocharged Engine</p>
+            </div>
+
+            <div class="spec-card" data-index="1">
+                <div class="spec-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                </div>
+                <h3 class="spec-value">5.1s</h3>
+                <p class="spec-description">0-60 mph Acceleration</p>
+            </div>
+
+            <div class="spec-card" data-index="2">
+                <div class="spec-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                </div>
+                <h3 class="spec-value">Quattro</h3>
+                <p class="spec-description">All-Wheel Drive System</p>
+            </div>
+
+            <div class="spec-card" data-index="3">
+                <div class="spec-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                </div>
+                <h3 class="spec-value">Premium</h3>
+                <p class="spec-description">Luxury Interior & Tech</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secondary Image Section -->
+    <section class="secondary-section">
+        <div class="secondary-overlay"></div>
+        <div class="secondary-content">
+            <h2 class="secondary-title">The Future of Driving</h2>
+            <p class="secondary-text">
+                Experience cutting-edge technology, unparalleled comfort, and breathtaking performance in perfect harmony.
+            </p>
+        </div>
+    </section>
+
+    <!-- Chatbot -->
+    <div id="chatbot">
+        <!-- Floating Chat Button -->
+        <button class="chat-button" id="chatButton" aria-label="Open chat">
+            <div class="chat-button-glow"></div>
+            <div class="chat-button-content">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+            </div>
+            <div class="chat-status-dot"></div>
+        </button>
+
+        <!-- Chat Window -->
+        <div class="chat-window" id="chatWindow">
+            <!-- Chat Header -->
+            <div class="chat-header">
+                <div class="chat-header-content">
+                    <div class="chat-avatar">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        <div class="chat-avatar-status"></div>
+                    </div>
+                    <div class="chat-header-info">
+                        <h3>Audi Assistant</h3>
+                        <p>Online</p>
+                    </div>
+                </div>
+                <button class="chat-close" id="chatClose" aria-label="Close chat">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Chat Messages -->
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will be inserted here by JavaScript -->
+            </div>
+
+            <!-- Chat Input -->
+            <div class="chat-input-container">
+                <input 
+                    type="text" 
+                    class="chat-input" 
+                    id="chatInput" 
+                    placeholder="Ask about Audi A6..."
+                    autocomplete="off"
+                />
+                <button class="chat-send" id="chatSend" aria-label="Send message">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+            <p class="chat-footer-text">Demo chatbot • Real integration coming soon</p>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
