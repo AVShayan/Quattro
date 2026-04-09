@@ -26,7 +26,7 @@ body {
 .hero-background {
     position: absolute;
     inset: 0;
-    background-image: url('https://images.unsplash.com/photo-1652254182724-040f8089b611');
+    background-image: url('./bg.jpeg');
     background-size: cover;
     background-position: center;
     transform: scale(1.1);
@@ -288,7 +288,7 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background-image: url('https://images.unsplash.com/photo-1656335889409-808b4119393f');
+    background-image: url('./secondary_img.jfif');
     background-size: cover;
     background-position: center;
 }
