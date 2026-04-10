@@ -26,7 +26,7 @@ body {
 .hero-background {
     position: absolute;
     inset: 0;
-    background-image: url('./bg.jpeg');
+    background-image: url('./bg.jfif');
     background-size: cover;
     background-position: center;
     transform: scale(1.1);
